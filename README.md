@@ -10,7 +10,7 @@ Via [npm](http://github.com/isaacs/npm):
 
 ## Pseudo code example
     var Caching = require('caching');
-    var cache = new Caching('redis');
+    var cache = new Caching('redis'); /* use 'memory' or 'redis' */
 
     var ttl = 60 * 1000 // 1minute;
     cache('twitter-users', ttl, function(passalong) {
@@ -23,7 +23,7 @@ Via [npm](http://github.com/isaacs/npm):
 
 ## Code example
     var Caching = require('caching');
-    var cache = new Caching('redis');
+    var cache = new Caching('redis'); /* use 'memory' or 'redis' */
     
     setInterval(function() {
     	cache('key', 10000 /*ttl in ms*/, function(passalong) {
