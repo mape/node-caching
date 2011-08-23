@@ -1,0 +1,16 @@
+{
+  "name" : "caching",
+  "description" : "Easier caching in node.js",
+  "version" : "0.0.1",
+  "author" : "Mathias Pettersson <mape@mape.me>",
+  "engines" : ["node"],
+  "directories" : { "lib" : "./lib" },
+  "main" : "./lib/caching",
+  "repositories" : [
+    { "type":"git", "url":"http://github.com/mape/node-caching" }
+  ],
+  "dependencies" : {
+    "hiredis" : ">=0.1.12",
+    "redis" : ">=0.6.7"
+  }
+}
