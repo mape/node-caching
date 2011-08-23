@@ -1,7 +1,7 @@
 {
   "name" : "caching",
   "description" : "Easier caching in node.js",
-  "version" : "0.0.1",
+  "version" : "0.0.2",
   "author" : "Mathias Pettersson <mape@mape.me>",
   "engines" : ["node"],
   "directories" : { "lib" : "./lib" },
