@@ -1,16 +1,29 @@
 {
-  "name" : "caching",
-  "description" : "Easier caching in node.js",
-  "version" : "0.0.2",
-  "author" : "Mathias Pettersson <mape@mape.me>",
-  "engines" : ["node"],
-  "directories" : { "lib" : "./lib" },
-  "main" : "./lib/caching",
-  "repositories" : [
-    { "type":"git", "url":"http://github.com/mape/node-caching" }
+  "name": "caching",
+  "description": "Easier caching in node.js",
+  "version": "0.1.2",
+  "author": "Mathias Pettersson <mape@mape.me>",
+  "engines": [
+    "node"
   ],
-  "dependencies" : {
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/caching",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "http://github.com/mape/node-caching"
+    }
+  ],
+  "dependencies": {
     "hiredis" : ">=0.1.12",
-    "redis" : ">=0.6.7"
+    "redis": ">=0.6.7"
+  },
+  "devDependencies": {
+    "expresso": "~0.8.1"
+  },
+  "scripts": {
+    "test": "expresso"
   }
 }
