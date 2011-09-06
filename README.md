@@ -12,7 +12,7 @@ Via [npm](http://github.com/isaacs/npm):
     var Caching = require('caching');
     var cache = new Caching('redis'); /* use 'memory' or 'redis' */
 
-    var ttl = 60 * 1000 // 1minute;
+    var ttl = 60 * 1000; // 1minute;
     cache('twitter-users', ttl, function(passalong) {
     	getMostActiveTwitterUser(function(err, userName) {
     		fetchTwitterFollowers(userName, passalong); // passalong replaces function(err, userList) {}
