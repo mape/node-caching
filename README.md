@@ -63,5 +63,5 @@ Callback that will run if results aren't already in cache store.
 Callback that is called every time the method runs.
 
     function(err, name, position, location) {
-    	console.log(userList);
+    	console.log(name, position, location);
     }
